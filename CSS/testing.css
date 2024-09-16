@@ -1,0 +1,26 @@
+.pref {
+    display: flex;
+    justify-content: space-around; /* Adjust the spacing between items */
+    flex-wrap: wrap; /* Allows wrapping to the next line if the container is too narrow */
+  }
+
+  .pref div {
+    text-align: center; /* Center the text below each image */
+    margin: 10px; /* Add some margin around each item */
+  }
+
+  .pref img {
+    display: block; /* Ensures the image is displayed as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 110px; /* Optional: Set a max width for the images */
+    height: auto; /* Maintain the aspect ratio of the images */
+  }
+
+  .pref label {
+    display: block; /* Makes sure the label appears below the image */
+    margin-top: 5px; /* Adds some space between the image and the label */
+  }
+
+  #upd{
+    margin-top: 20px;
+  }

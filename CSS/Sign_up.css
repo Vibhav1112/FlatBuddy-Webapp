@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99/var(--tw-text-opacity));
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99/var(--tw-text-opacity));
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99/var(--tw-text-opacity));
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99/var(--tw-text-opacity));
+    font-size: .99rem;
+  }
+
+  #bud{
+    color: #a033ff;
+  }
+  
+  form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, select {
+    width: 50%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-radius: 9999px;
+  } 
+  
+  input[type="radio"] {
+    width: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  input[type="file"] {
+    width: 80%;
+    height:28%;
+    margin-bottom: -2%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-radius: 9999px;
+  }
+
+  h5{
+    text-align: center;
+  }
+  
+  input[type="submit"] {
+    width: 40%;
+    margin-left: 30%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* #reg{
+    width: 40%;
+  } */
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  select {
+    width: 60%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-radius: 9999px;
+  }
+  
+  option {
+    padding: 10px;
+  }
+  
+  /* Add some basic styling to the buttons */
+  button {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 9999px;
+  }
+  
+  button:hover {
+    background-color: #f2f2f2;
+  }
+
+  #ma{
+    border-radius: 9999px;
+  }
+
+  #fe{
+    border-radius: 9999px;
+  }
+
+  #user{
+    text-align: center;
+  }
+
+  /* The modal window */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 0px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+ 
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  justify-content: center;
+}
+ 
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+ 
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+ 

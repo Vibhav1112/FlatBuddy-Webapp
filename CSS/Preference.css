@@ -1,0 +1,285 @@
+#bud{
+    color: #a033ff;
+  }
+
+h1{
+    text-align: center;
+}  
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99/var(--tw-text-opacity));
+    font-size: 41px;
+    margin-top: 2%;
+  }
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99/var(--tw-text-opacity));
+  } 
+
+  .bor{
+    display: flex;
+  }
+
+  .form-options{
+    width: 50%;
+  }
+  
+  form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+  #user{
+    text-align: center;
+  }
+  
+  
+  label {
+    display: block;
+    margin-bottom: 10px
+    
+  }
+  
+  input, select {
+    width: 60%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-radius: 9999px;
+  } 
+
+  #who{
+    width: 15%;
+  }
+  
+  input[type="radio"] {
+    width: 50px;
+    /* height: 40px; */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  input[type="file"] {
+    width: 80%;
+    height:28%;
+    margin-bottom: -2%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-radius: 9999px;
+  }
+
+  h5{
+    text-align: center;
+  }
+  
+  input[type="submit"] {
+    width: 40%;
+    margin-left: 30%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  select {
+    width: 80%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-radius: 9999px;
+  }
+  
+  option {
+    padding: 10px;
+  }
+  
+  /* Add some basic styling to the buttons */
+  button {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 9999px;
+  }
+  
+  button:hover {
+    background-color: #f2f2f2;
+  }
+
+  #ma{
+    border-radius: 9999px;
+  }
+
+  #fe{
+    border-radius: 9999px;
+  }  
+
+  .pref {
+    display: flex;
+    justify-content: space-around; /* Adjust the spacing between items */
+    flex-wrap: wrap; /* Allows wrapping to the next line if the container is too narrow */
+  }
+
+  .pref input[type="checkbox"] {
+    display: none; /* Hide the checkbox */
+}
+
+.pref img {
+  width: 100px; /* Adjust size as needed */
+  height: 100px;
+  border: 3px solid transparent;
+  border-radius: 50%; /* Make the image circular */
+  transition: border-color 0.3s ease;
+  padding: 10px;
+}
+
+.pref span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.pref input[type="checkbox"]:checked + img {
+  border-color: #4CAF50; /* Green circular border when selected */
+}
+
+
+
+  .pref div {
+    text-align: center; /* Center the text below each image */
+    margin: 10px; /* Add some margin around each item */
+  }
+
+  .pref img {
+    display: block; /* Ensures the image is displayed as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 110px; /* Optional: Set a max width for the images */
+    height: auto; /* Maintain the aspect ratio of the images */
+    margin-bottom: 15px;
+  }
+
+  .pref label{
+    display: block; /* Makes sure the label appears below the image */
+    margin-top: 5px; /* Adds some space between the image and the label */
+  }
+
+  #upd{
+    margin-top: 20px;
+  }
+
+  /* Style the drop area */
+.drop-area {
+  border: 2px dashed #4CAF50; /* Green dashed border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 40px; /* Padding inside the drop area */
+  text-align: center; /* Center the text */
+  color: #4CAF50; /* Green text color */
+  font-size: 18px; /* Font size */
+  cursor: pointer; /* Pointer cursor to indicate clickability */
+  position: relative; /* For positioning the input */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  width: 80%;
+  margin: auto;
+}
+
+.drop-area:hover {
+  background-color: #f1f1f1; /* Light grey background on hover */
+}
+
+.drop-area p {
+  margin: 0; /* Remove margin from paragraph */
+}
+
+#file-input {
+  display: none; /* Hide the default file input */
+}
+
+.preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.preview-img {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.high {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines if necessary */
+  gap: 20px; /* Space between highlight options */
+}
+
+.highlight-option {
+  display: flex;
+  flex-direction: column; /* Stack label and checkbox vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text within the label */
+  width: 150px; /* Set a fixed width for each option to align them nicely */
+  border: 2px solid #ccc; /* Outline border around each option */
+  border-radius: 8px; /* Rounded corners for the border */
+  padding: 10px; /* Padding inside the border for spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for a lifted effect */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.highlight-option label {
+  margin-bottom: 5px; /* Space between the label and checkbox */
+}
+
+.highlight-option input[type="checkbox"] {
+  margin: 0; /* Remove any margin around the checkbox */
+}
+
+
+
+
+
+
+
+
+
+
+  
+
+  

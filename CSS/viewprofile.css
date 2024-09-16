@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 15% 2%;
+}
+
+.logo-box h2 a {
+    text-decoration: none;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin-left: 80px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    margin-right: 80px;
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* Profile Content */
+
+.userprofile {
+    max-width: 48%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 5%;
+    padding-bottom: 10%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.userprofile h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #5c67f2;
+    text-align: center;
+    margin-top: -25px;
+}
+
+.profile-details {
+    
+    margin-top: 35px;
+}
+
+
+#inp{
+    margin-right: 500px;
+}
+
+input{
+    border: 0;
+    padding: 10px;
+    margin: 0;
+    background: transparent;
+    width: 200px;
+    border-radius: 50px;
+    
+}
+
+input[type=text]:focus{
+    outline: 2px solid #5c67f2;        /*Changes the outline border colour of the input field */
+  }
+
+input[type=email]:focus{
+    outline: 2px solid #5c67f2;
+}
+
+
+/******************************* Profile image hover *****************************/
+
+/* Style the container for the profile image */
+.profile-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+}
+
+/* Style the profile image */
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-top: 10%;
+    margin-right: 80px;
+}
+
+/* Add a stylish hover effect on the image */
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+/* Initially hide the pop-up */
+.profile-popup {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 110%; /* Position the pop-up below the image */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 1;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+/* Show the pop-up when hovering over the profile image or the pop-up itself */
+.profile-container:hover .profile-popup,
+.profile-popup:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Style the links inside the pop-up */
+.profile-popup a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+/* Change color on hover for links */
+.profile-popup a:hover {
+    color: #ffcc00;
+}
+
